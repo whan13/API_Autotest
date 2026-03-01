@@ -32,6 +32,11 @@
 └── requirements.txt      # 项目依赖包列表
 ```
 
-![image-20260302030301667](C:\Users\User\AppData\Roaming\Typora\typora-user-images\image-20260302030301667.png)
+------
 
-![image-20260302025054799](C:\Users\User\AppData\Roaming\Typora\typora-user-images\image-20260302025054799.png)
+![本地调试](./images/local_test.png)
+
+------
+
+![Allure报告](./images/web_report.png)
+
