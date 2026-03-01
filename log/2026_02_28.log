@@ -1,0 +1,35 @@
+2026-02-28 00:04:22,590 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x00000223BD66E990>,), kwargs:{}
+2026-02-28 00:07:53,091 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000018EB340E850>,), kwargs:{}
+2026-02-28 00:11:26,298 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x00000172DD4FE850>,), kwargs:{}
+2026-02-28 00:11:26,312 - INFO : Function:[test_login], Result: {'code': '200', 'msg': '登录成功！', 'model': '{}'}
+2026-02-28 00:55:42,287 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000021114DC6850>,), kwargs:{}
+2026-02-28 00:55:42,346 - INFO : Function:[test_login], Result: {'code': '200', 'msg': '登录成功！', 'model': '{}'}
+2026-02-28 00:55:42,349 - INFO : Function:[test_add], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000021114DC6D50>,), kwargs:{}
+2026-02-28 00:56:03,496 - INFO : Function:[test_check], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000021114E388A0>,), kwargs:{}
+2026-02-28 00:59:23,326 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000002CA13DA2850>,), kwargs:{}
+2026-02-28 00:59:23,343 - INFO : Function:[test_login], Result: {'code': '200', 'msg': '登录成功！', 'model': '{}'}
+2026-02-28 00:59:23,351 - INFO : Function:[test_add], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000002CA13DA2D50>,), kwargs:{}
+2026-02-28 00:59:23,404 - INFO : Function:[test_check], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000002CA13E0C8A0>,), kwargs:{}
+2026-02-28 01:06:00,232 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000001D49DE82850>,), kwargs:{}
+2026-02-28 01:06:00,248 - INFO : Function:[test_login], Result: {'code': '200', 'msg': '登录成功！', 'model': '{}'}
+2026-02-28 01:06:00,251 - INFO : Function:[test_add], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000001D49DE82D50>,), kwargs:{}
+2026-02-28 01:06:00,310 - INFO : Function:[test_check], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000001D49DEF08A0>,), kwargs:{}
+2026-02-28 23:51:18,514 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000001A73CF62850>,), kwargs:{}
+2026-02-28 23:51:18,548 - INFO : Function:[test_login], Result: {'code': '200', 'msg': '登录成功！', 'model': '{}'}
+2026-02-28 23:51:18,561 - INFO : Function:[test_add], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000001A73CF62D50>,), kwargs:{}
+2026-02-28 23:51:18,618 - INFO : Function:[test_check], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000001A73CFCC8A0>,), kwargs:{}
+2026-02-28 23:53:22,721 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x00000201C55A2850>,), kwargs:{}
+2026-02-28 23:53:22,736 - INFO : Function:[test_login], Result: {'code': '200', 'msg': '登录成功！', 'model': '{}'}
+2026-02-28 23:53:22,742 - INFO : Function:[test_add], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x00000201C55A2D50>,), kwargs:{}
+2026-02-28 23:53:22,754 - INFO : Function:[test_add], Result: {'code': '200', 'msg': '登录成功！', 'model': '{}'}
+2026-02-28 23:53:22,756 - INFO : Function:[test_check], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x00000201C56108A0>,), kwargs:{}
+2026-02-28 23:53:43,566 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000016BF9582850>,), kwargs:{}
+2026-02-28 23:53:43,582 - INFO : Function:[test_login], Result: {'code': '200', 'msg': '登录成功！', 'model': '{}'}
+2026-02-28 23:53:43,589 - INFO : Function:[test_add], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000016BF9582D50>,), kwargs:{}
+2026-02-28 23:53:43,601 - INFO : Function:[test_add], Result: {'code': '200', 'msg': '登录成功！', 'model': '{}'}
+2026-02-28 23:53:43,603 - INFO : Function:[test_check], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000016BF95EC8A0>,), kwargs:{}
+2026-02-28 23:55:51,604 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000024828E02850>,), kwargs:{}
+2026-02-28 23:55:51,660 - INFO : Function:[test_login], Result: {'code': '200', 'msg': '登录成功！', 'model': '{}'}
+2026-02-28 23:55:51,666 - INFO : Function:[test_add], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000024828E02D50>,), kwargs:{}
+2026-02-28 23:55:51,677 - INFO : Function:[test_add], Result: {'code': '200', 'msg': '登录成功！', 'model': {}}
+2026-02-28 23:55:51,679 - INFO : Function:[test_check], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000024828E6C8A0>,), kwargs:{}

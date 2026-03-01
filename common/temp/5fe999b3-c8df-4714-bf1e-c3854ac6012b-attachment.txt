@@ -1,0 +1,1 @@
+[请求异常] 路径: https://jsonplaceholder.typicode.com/invalid_path/999999 | 错误信息: 404 Client Error: Not Found for url: https://jsonplaceholder.typicode.com/invalid_path/999999

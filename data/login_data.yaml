@@ -1,0 +1,7 @@
+# data/login_data.yaml
+---
+casename: "正常登录"
+url: "http://192.168.5.3:10393/mock/85a2d154-4795-4251-b08d-a62b329667a9/auth/login"  
+header: {"Content-Type": "application/json"}
+body: {"username": "admin", "password": "123"}
+expected: {"code": 200, "msg": "登录成功"}

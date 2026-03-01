@@ -1,0 +1,32 @@
+2026-03-01 01:49:06,125 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000001E2FB6C2850>,), kwargs:{}
+2026-03-01 01:49:06,168 - INFO : Function:[test_login], Result: {'code': '200', 'msg': '登录成功！', 'model': {'userList': [{'id': '101', 'username': 'test_user_100'}]}}
+2026-03-01 01:49:06,174 - INFO : Function:[test_add], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000001E2FB6C2D50>,), kwargs:{}
+2026-03-01 01:49:06,187 - INFO : Function:[test_add], Result: {'code': '200', 'msg': '登录成功！', 'model': {}}
+2026-03-01 01:49:06,189 - INFO : Function:[test_check], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000001E2FB72C8A0>,), kwargs:{}
+2026-03-01 01:52:47,788 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000022A1A542850>,), kwargs:{}
+2026-03-01 01:52:47,804 - INFO : Function:[test_login], Result: {'code': '200', 'msg': '登录成功！', 'model': {'userList': [{'id': '101', 'username': 'test_user_100'}]}}
+2026-03-01 01:52:47,806 - INFO : Function:[test_add], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000022A1A542D50>,), kwargs:{}
+2026-03-01 01:52:47,817 - INFO : Function:[test_add], Result: {'code': '200', 'msg': '登录成功！', 'model': {}}
+2026-03-01 01:52:47,823 - INFO : Function:[test_check], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000022A1A5AC8A0>,), kwargs:{}
+2026-03-01 02:01:46,884 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000019D0E772850>,), kwargs:{}
+2026-03-01 02:01:46,940 - INFO : Function:[test_login], Result: {'code': '200', 'msg': '登录成功！', 'model': {}}
+2026-03-01 02:01:46,943 - INFO : Function:[test_add], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000019D0E772D50>,), kwargs:{}
+2026-03-01 02:01:46,954 - INFO : Function:[test_add], Result: {'code': '200', 'msg': '登录成功！', 'model': {}}
+2026-03-01 02:01:46,957 - INFO : Function:[test_check], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000019D0E7DC8A0>,), kwargs:{}
+2026-03-01 02:01:46,966 - INFO : Function:[test_check], Result: {'code': '200', 'msg': '登录成功！', 'model': {'userList': [{'id': '101', 'username': 'test_user_100'}]}}
+2026-03-01 02:02:56,851 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000015204ED6850>,), kwargs:{}
+2026-03-01 02:02:56,867 - INFO : Function:[test_login], Result: {'code': '200', 'msg': '登录成功！', 'model': {}}
+2026-03-01 02:02:56,869 - INFO : Function:[test_add], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000015204ED6D50>,), kwargs:{}
+2026-03-01 02:02:56,900 - INFO : Function:[test_add], Result: {'code': '200', 'msg': '登录成功！', 'model': {}}
+2026-03-01 02:02:56,908 - INFO : Function:[test_check], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000015204F4C8A0>,), kwargs:{}
+2026-03-01 02:02:56,917 - INFO : Function:[test_check], Result: {'code': '200', 'msg': '登录成功！', 'model': {'userList': [{'id': '101', 'username': 'test_user_100'}]}}
+2026-03-01 02:02:56,919 - INFO : Function:[test_delete], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000015204F4CB00>,), kwargs:{}
+2026-03-01 02:02:56,928 - INFO : Function:[test_delete], Result: {'code': '200', 'msg': '登录成功！', 'model': {}}
+2026-03-01 02:08:27,144 - INFO : Function:[test_login], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000001B888E76850>,), kwargs:{}
+2026-03-01 02:08:27,158 - INFO : Function:[test_login], Result: {'code': '200', 'msg': '登录成功！', 'model': {}}
+2026-03-01 02:08:27,161 - INFO : Function:[test_add], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000001B888E76D50>,), kwargs:{}
+2026-03-01 02:08:27,172 - INFO : Function:[test_add], Result: {'code': '200', 'msg': '登录成功！', 'model': {}}
+2026-03-01 02:08:27,180 - INFO : Function:[test_check], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000001B888EF08A0>,), kwargs:{}
+2026-03-01 02:08:27,189 - INFO : Function:[test_check], Result: {'code': '200', 'msg': '登录成功！', 'model': {'userList': [{'id': '101', 'username': 'test_user_100'}]}}
+2026-03-01 02:08:27,190 - INFO : Function:[test_delete], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x000001B888EF0B00>,), kwargs:{}
+2026-03-01 02:08:27,197 - INFO : Function:[test_delete], Result: {'code': '200', 'msg': '登录成功！', 'model': {}}

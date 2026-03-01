@@ -1,0 +1,79 @@
+---
+#登录成功
+url: http://192.168.31.222:8080/cms/manage/loginJump.do
+header: {
+  Content-Type: application/x-www-form-urlencoded
+}
+body: {
+  userAccount: admin,
+  loginPwd: 123456
+}
+response: {
+  code: '222',
+  msg: 登录成功！,
+  model: {}
+}
+
+---
+#用户名参数为空
+url: http://192.168.31.222:8080/cms/manage/loginJump.do
+header: {
+  Content-Type: application/x-www-form-urlencoded
+}
+body: {
+  userAccount: '',
+  loginPwd: 123456
+}
+response: {
+  code: '400',
+  msg: 登录帐号不能为空！,
+  model: {}
+}
+
+---
+#密码名为空
+url: http://192.168.31.222:8080/cms/manage/loginJump.do
+header: {
+  Content-Type: application/x-www-form-urlencoded
+}
+body: {
+  userAccount: admin,
+  loginPwd: ''
+}
+response: {
+  code: '400',
+  msg: 登录密码不能为空！,
+  model: {}
+}
+
+---
+#用户名为null
+url: http://192.168.31.222:8080/cms/manage/loginJump.do
+header: {
+  Content-Type: application/x-www-form-urlencoded
+}
+body: {
+  userAccount: 'null',
+  loginPwd: 123456
+}
+response: {
+  code: '400',
+  msg: 登录帐号不存在！,
+  model: {}
+}
+
+---
+#密码为null
+url: http://192.168.31.222:8080/cms/manage/loginJump.do
+header: {
+  Content-Type: application/x-www-form-urlencoded
+}
+body: {
+  userAccount: admin,
+  loginPwd: 'null'
+}
+response: {
+  code: '400',
+  msg: 登录密码不正确！,
+  model: {}
+}
