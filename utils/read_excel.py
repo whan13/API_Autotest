@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-@Time:2021/8/23 11:14
-@Auth: wanghan
-@QQ :346606022
-@WeChat :wanghan960501
-"""
 import xlrd
 from common.public_path import read_path
 from utils.read_yaml import Read_Yaml

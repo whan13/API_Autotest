@@ -11,7 +11,7 @@ class Connect_mysql():
     def select_sql(self,sql):
         try:
             self.cursor.execute(sql)
-            return self.cursor.fetchall()
+            return self.cursor.fetchall()   
         except Exception as e:
             print('查询异常',e)
 
@@ -20,5 +20,6 @@ class Connect_mysql():
             self.db_connect.close()
 
 if __name__ == '__main__':
+    #工具调试
     con_sql=Connect_mysql('127.0.0.1','root','root','cms_db',3306)
     print(con_sql.select_sql('select * from sys_user where id in (select max(id) from sys_user)'))
