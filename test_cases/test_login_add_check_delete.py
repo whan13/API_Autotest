@@ -11,8 +11,29 @@ read_ex=Read_Excel()#实例化读取excel的类
 r_w_file=Read_Write_File()
 
 class Test_Cms():
+
+    # 1. 定义清理数据的 Fixture
+    @pytest.fixture(autouse=True, scope="class")
+    def manage_db_cleanup(self):
+        # yield 之前是前置，这里可以留空
+        yield 
+        # --- yield 之后是后置 (Teardown) ---
+        print("\n[Teardown] 开始强制清理数据库测试数据...")
+        try:
+            # 从文件读取 ID
+            id_value = r_w_file.read_file() 
+            if id_value:
+                # 引用你之前写好的 Connect_mysql
+                from utils.read_sql import Connect_mysql
+                db = Connect_mysql('127.0.0.1', 'root', 'root', 'cms_db', 3306)
+                # 执行物理删除
+                db.cursor.execute(f"DELETE FROM sys_user WHERE id = {id_value}")
+                db.db_connect.commit()
+                print(f"[Teardown] ID:{id_value} 已被清理。")
+        except Exception as e:
+            print(f"[Teardown] 清理失败: {e}")
+            
     #在类方法上方写一行 @trace_log，它就会自动帮你记录每一个接口的请求和响应信息。这对于排查测试失败的原因（Traceback）极其有用
-    @pytest.mark.run(order=1)
     @trace_log
     def test_login(self):
         resp=req.post(url=read_ex.get_url(1),data=read_ex.get_body(1))
@@ -21,7 +42,6 @@ class Test_Cms():
         assert resp.json()['code'] == json.loads(read_ex.get_except(1))['code']
         return resp.json()
 
-    @pytest.mark.run(order=2)
     @trace_log
     def test_add(self):
         resp = req.post(url=read_ex.get_url(2), data=read_ex.get_body(2))
@@ -29,7 +49,6 @@ class Test_Cms():
         r_w_file.write_file()#把新添加用户的ID从数据库读取出来，然后写入user_id.txt文件
         return resp.json()
 
-    @pytest.mark.run(order=3)
     @trace_log
     def test_check(self):
         resp = req.post(url=read_ex.get_url(3), data=read_ex.get_body(3))
@@ -45,7 +64,6 @@ class Test_Cms():
     #     print(resp.json())
     #     return resp.json()
 
-    @pytest.mark.run(order=4)
     @trace_log
     def test_delete(self):
         id_value = r_w_file.read_file() # 读取 txt 里的 ID
