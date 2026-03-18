@@ -1,2 +1,0 @@
-[32mINFO    [0m root:logger.py:46 Function:[test_check], args:(<test_cases.test_login_add_check_delete.Test_Cms object at 0x0000021CBA290B00>,), kwargs:{}
-[32mINFO    [0m root:logger.py:50 Function:[test_check], Result: {'code': '200', 'msg': '登录成功！', 'model': {'userList': [{'id': '101', 'username': 'test_user_100'}]}}
