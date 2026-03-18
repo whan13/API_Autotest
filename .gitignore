@@ -1,1 +1,17 @@
 __pycache__/
+
+# 忽略 Excel 临时文件
+~$*.xlsx
+
+# 忽略日志
+log/
+*.log
+
+# 忽略 Allure 报告结果
+report/
+reports/
+allure-results/
+
+# 忽略 Python 缓存
+__pycache__/
+.pytest_cache/

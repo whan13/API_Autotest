@@ -21,6 +21,10 @@
 #   ]
 # ]
 
+
+
+case_001_login: {userAccount: admin,loginPwd: 123456}
+
 case_002_user: [[{
   id: "100",
   userName: "test_user_99",
@@ -39,12 +43,10 @@ case_002_user: [[{
   status: 1,
 }, {}]
 ]
-#
-case_001_login: {userAccount: admin,loginPwd: 123456}
-##
-case_003_checkuser: {
- startCreateDate: "",
- endCreateDate: "",
- searchValue: "",
- page: "1"
-}
+
+case_003_checkuser: {userAccount: admin,loginPwd: 123456}
+
+
+case_004_deleteuser: {userAccount: admin,loginPwd: 123456}
+
+

@@ -37,18 +37,46 @@ class Logger:
 # 实例化 Logger 并调用 logger() 方法，得到一个全局可用的 log 对象
 log = Logger().logger()
 
+# def trace_log(func):
+#     """
+#     这是一个日志装饰器，用来自动记录函数的执行情况
+#     """
+#     def wrapper(*args, **kwargs):
+#         # 在函数执行前：记录函数名、位置参数(*args)和关键字参数(**kwargs)
+#         log.info('Function:[{}], args:{}, kwargs:{}'.format(func.__name__, args, kwargs))
+#         # 正式执行被装饰的函数（如 test_login）
+#         result = func(*args, **kwargs)
+#         # 在函数执行后：记录函数名和它的返回值（Result）
+#         log.info('Function:[{}], Result: {}'.format(func.__name__, result))
+#         # 返回函数的执行结果，保证原函数功能不受影响
+#         return result
+#     return wrapper
+
+
+# def trace_log(func):
+#     @wraps(func)  # 必须加这一行，解决 Allure 关联错乱的关键
+#     def wrapper(*args, **kwargs):
+#         log.info(f'Function:[{func.__name__}], args:{args}')
+#         result = func(*args, **kwargs)
+#         log.info(f'Function:[{func.__name__}], Result: {result}')
+#         return result
+#     return wrapper
+
+from functools import wraps
+
 def trace_log(func):
-    """
-    这是一个日志装饰器，用来自动记录函数的执行情况
-    """
+    @wraps(func)
     def wrapper(*args, **kwargs):
-        # 在函数执行前：记录函数名、位置参数(*args)和关键字参数(**kwargs)
-        log.info('Function:[{}], args:{}, kwargs:{}'.format(func.__name__, args, kwargs))
-        # 正式执行被装饰的函数（如 test_login）
+        # 1. 记录开始执行
+        log.info(f"Function:[{func.__name__}] Start, args:{args}")
+        
+        # 2. 正式执行函数
         result = func(*args, **kwargs)
-        # 在函数执行后：记录函数名和它的返回值（Result）
-        log.info('Function:[{}], Result: {}'.format(func.__name__, result))
-        # 返回函数的执行结果，保证原函数功能不受影响
+        
+        # 3. 只有当确实有返回值（非测试用例）时才打印结果
+        if result is not None:
+            log.info(f"Function:[{func.__name__}] Result: {result}")
+        
         return result
     return wrapper
 
